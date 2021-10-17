@@ -1,38 +1,47 @@
-.App {
+* {
+  font-family: "Noto Sans Mono", monospace;
+}
+
+.wrapper {
+  padding: 5px;
+}
+
+input {
+  width: 150px;
+  height: 30px;
+  border-radius: 30px;
+  margin-left: 10px;
+  margin-top: 5px;
+  outline: none;
+  border: 2px solid #008cba;
+  font-size: 10px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input:focus {
+  background-color: lightblue;
+  transition: 0.3s linear;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  margin-top: 5px;
+  background-color: #008cba;
+  border: none;
   color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #fff173;
+  color: #008cba;
+  transition: 0.3s linear;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li {
+  list-style-type: none;
 }
